@@ -25,7 +25,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExcelReader;
 import utilities.ExtentManager;
 
-
+//base package
 public class Page {
 	public static WebDriver driver;
 	public static Properties config = new Properties();
@@ -35,7 +35,7 @@ public class Page {
 	public static String browser;
 	public static WebDriverWait wait;
 	public static ExcelReader excel = new ExcelReader(
-			System.getProperty("user.dir") + "\\src\\test\\resources\\com\\w2a\\excel\\testdata.xlsx");
+			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\TestData.xlsx");
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
 
