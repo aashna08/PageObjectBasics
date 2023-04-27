@@ -1,9 +1,18 @@
 package pages;
 
-public class HomePage {
+import base.Page;
 
-	public HomePage() {
-		// TODO Auto-generated constructor stub
+public class HomePage extends Page{
+
+	public void goToCustomers()
+	{
+		
+	}
+	
+	public LoginPage goToSignIn()
+	{
+		click("Sign_in_xpath");
+		return new LoginPage();
 	}
 
 }
