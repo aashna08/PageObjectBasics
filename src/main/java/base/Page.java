@@ -25,7 +25,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExcelReader;
 import utilities.ExtentManager;
 
-//base package
+//base package11
 public class Page {
 	public static WebDriver driver;
 	public static Properties config = new Properties();
