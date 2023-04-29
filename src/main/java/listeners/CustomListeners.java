@@ -75,6 +75,7 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 	public void onTestStart(ITestResult arg0) {
 
 		test = rep.startTest(arg0.getName().toUpperCase());
+		System.out.println("Test case started");
 	
 	}
 
@@ -89,7 +90,7 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 
 	public void onFinish(ISuite arg0) {
 		
-		MonitoringMail mail = new MonitoringMail();
+		/*MonitoringMail mail = new MonitoringMail();
 		 
 		try {
 			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
@@ -107,7 +108,7 @@ public class CustomListeners extends Page implements ITestListener,ISuiteListene
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 
 		
 	}

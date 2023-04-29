@@ -16,7 +16,8 @@ public class LoginTest extends TestBase {
 		
 		@Test(dataProviderClass = Utilities.class, dataProvider = "dp")
 		public void loginTest(Hashtable<String,String> data){
-			
+			System.out.println("Username is "+data.get("username"));
+			System.out.println("password is "+data.get("password"));
 			HomePage home = new HomePage();
 			LoginPage lp = home.goToSignIn();
 			lp.doLogin(data.get("username"), data.get("password"));
